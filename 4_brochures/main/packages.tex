@@ -1,5 +1,5 @@
 % input encoding as utf8
-\usepackage[utf8]{inputenc}
+%\usepackage[utf8]{inputenc}
 % better font encoding for the different languages
 \usepackage[T1]{fontenc}
 % phonetic characters
@@ -13,10 +13,11 @@
 % avoid widows and orphans
 \usepackage[all]{nowidow}
 
+
 % avoid error messages like 131 in Adobe Reader for some compressed bitmap objects
-\pdfminorversion=5
-\pdfobjcompresslevel=1
-\pdfsuppresswarningpagegroup=1
+%\pdfminorversion=5
+%\pdfobjcompresslevel=1
+%\pdfsuppresswarningpagegroup=1
 % for links and pdf options (hypersetup is in the title page!)
 \PassOptionsToPackage{hyphens}{url}
 \usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black]{hyperref}
@@ -80,6 +81,7 @@
 \DeclareQuoteStyle{BrochureQuoteStyle-deu}{«}[» ]{»}{‹}[»› ]{›}
 \DeclareQuoteStyle{BrochureQuoteStyle-fra}{«\thinspace{}}[» ]{\thinspace{}»}{“}[»\thinspace{}› ]{”}
 \DeclareQuoteStyle{BrochureQuoteStyle-eng}{«}[» ]{»}{“}[»› ]{”}
+\DeclareQuoteStyle{BrochureQuoteStyle-gu}{«}[» ]{»}{“}[»› ]{”}
 
 % for hyphenation within \texttt, e.g. in \href or \url
 \usepackage[htt]{hyphenat}

@@ -1,0 +1,108 @@
+\documentclass[a4paper,11pt,twoside,open=any]{scrbook}
+% Place \setuptoc in the preamble before the document begins
+\setuptoc{toc}{totoc}
+
+% set a language name (german, french or italian)
+
+\usepackage{polyglossia}
+
+% Define a font family that supports the Gujarati script
+%\newfontfamily\gujaratifont[Script=gujarati]{Lohit-Gujarati} % Replace 'Shruti' with your installed Gujarati font
+
+% Set the main language to Gujarati
+\setdefaultlanguage{gujarati}
+
+\setmainfont[Script=Gujarati, Renderer=HarfBuzz]{Noto Serif Gujarati}
+\setsansfont[Script=Gujarati, Renderer=HarfBuzz]{Noto Serif Gujarati}
+\setmonofont[Script=Gujarati, Renderer=HarfBuzz]{Noto Serif Gujarati}
+
+% Set the fallback language (e.g., English)
+
+\setotherlanguage{english}
+
+\newfontfamily\gujaratifont[Script=Gujarati, Renderer=HarfBuzz]{Noto Serif Gujarati}
+\newfontfamily\gujaratifontsans[Script=Gujarati, Renderer=HarfBuzz]{Noto Serif Gujarati}
+\newfontfamily\gujaratifonttt[Script=Gujarati, Renderer=HarfBuzz]{Noto Serif Gujarati}
+
+%\newfontfamily\gujaratifont[Script=Gujarati]{Nirmala UI}
+% load all packages, create commands, etc.
+
+\renewcommand{\contentsname}{અનુક્રમણિકા} % Type your desired translation here
+
+\ExplSyntaxOn 
+
+\cs_new:Npn \guj_digit:n #1 
+{ 
+    \int_case:nnF {#1} 
+    { 
+        {0}{૦} 
+        {1}{૧} 
+        {2}{૨} 
+        {3}{૩} 
+        {4}{૪} 
+        {5}{૫} 
+        {6}{૬} 
+        {7}{૭} 
+        {8}{૮} 
+        {9}{૯} 
+    } 
+    {#1} 
+} 
+
+\cs_new:Npn \guj_digits:n #1 
+{ 
+    \tl_map_function:nN { #1 } \guj_digit:n 
+} 
+
+\NewExpandableDocumentCommand{\gujaratiarabic}{m} 
+{ 
+    \exp_args:Ne \guj_digits:n { \int_to_arabic:n {#1} } 
+}
+
+\ExplSyntaxOff
+
+% Page number representation 
+\renewcommand{\thepage}{% 
+    \gujaratiarabic{\value{page}}% 
+} % Chapter number representation 
+
+\renewcommand{\thechapter}{% 
+    \gujaratiarabic{\value{chapter}}% 
+}
+
+% Section number representation, if needed 
+\renewcommand{\thesection}{% 
+    \thechapter.\gujaratiarabic{\value{section}}% 
+}
+
+%\renewcommand*{\pagemark}{\thepage}
+\renewcommand*{\pagemark}{% 
+    \gujaratifont 
+    \gujaratiarabic{\value{page}}
+}
+
+% Converts the page number argument from the TOC into Gujarati digits 
+\newcommand*{\GujaratiTOCPageNumber}[1]{% 
+    \gujaratifont \gujaratiarabic{#1}% 
+}
+
+\AddToHook{cmd/mainmatter/after}{% 
+    \renewcommand{\thepage}{% 
+        \gujaratiarabic{\value{page}}% 
+    }% 
+}
+
+\input{main/header.tex}
+
+% set the age categories (either true or false)
+\newboolean{age3to4}\setboolean{age3to4}{true}
+\newboolean{age5to6}\setboolean{age5to6}{true}
+\newboolean{age7to8}\setboolean{age7to8}{true}
+\newboolean{age9to10}\setboolean{age9to10}{true}
+\newboolean{age11to13}\setboolean{age11to13}{true}
+
+% set whether with or without solutions
+\newboolean{solutions}\setboolean{solutions}{false}
+
+% the document itself
+\input{main/main.tex}

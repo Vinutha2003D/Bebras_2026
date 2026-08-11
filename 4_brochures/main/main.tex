@@ -43,6 +43,8 @@
     % protrusion should be disabled for toc
     \microtypesetup{protrusion=false}
     % line style
+   % \IfLanguageName{english}{\DeclareTOCStyleEntry[beforeskip=0pt,numwidth=2em,linefill=\TOCLineLeaderFill]{chapter}{chapter}}{}
+   % \DeclareTOCStyleEntry[beforeskip=0pt,numwidth=2em,linefill=\TOCLineLeaderFill,pagenumberformat=\GujaratiTOCPageNumber, pagenumberwidth=2.5em]{chapter}{chapter}
     \DeclareTOCStyleEntry[beforeskip=0pt,numwidth=2em,linefill=\TOCLineLeaderFill]{chapter}{chapter}
     % table of contents
     \tableofcontents
@@ -51,7 +53,7 @@
   
   \mainmatter
   % the tasks
-  
+
   %set the header
   \newcommand{\BrochureSetHeadersForTasks}{
     \renewcommand{\Brochurelohead}{\BrochureFlag{\taskCountry}{} \taskTitle{} \emph{\taskDifficulties}}
@@ -66,8 +68,11 @@
 
   \BrochureSetHeadersForTasks{}
   
-  \input{tasks/tasks.tex}
-
+ % \IfLanguageName{english}{\input{tasks/onetask.tex}}{}
+  \IfLanguageName{english}{\input{tasks/tasks.tex}}{}
+  \IfLanguageName{gujarati}{\input{tasks/Test_tasks.tex}}{}
+  %\input{tasks/Test_tasks.tex}
+  %\input{tasks/tasks.tex}
   \BrochureSetHeadersForNonTasks{}
   
   

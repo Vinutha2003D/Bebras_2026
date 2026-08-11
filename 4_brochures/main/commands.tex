@@ -1,6 +1,6 @@
 % set file name postfix for each language
 \IfLanguageName{english}{\newcommand{\BrochureLanguagePostfix}{-eng}}{}
-\IfLanguageName{french}{\newcommand{\BrochureLanguagePostfix}{-fra}}{}
+\IfLanguageName{gujarati}{\newcommand{\BrochureLanguagePostfix}{-gu}}{}
 \IfLanguageName{italian}{\newcommand{\BrochureLanguagePostfix}{-ita}}{}
 
 \setquotestyle{BrochureQuoteStyle\BrochureLanguagePostfix}
@@ -17,6 +17,7 @@
   %\defineshorthand[french]{!}{\thinspace{}!}%
   %\defineshorthand[french]{?}{\thinspace{}?}%
 }{}
+
 
 % input a task file
 \newcommand{\BrochureTask}[2]{
@@ -49,7 +50,7 @@
 
 % initialize age difficulty names
 \IfLanguageName{english}{\newcommand{\BrochureEasy}{easy}\newcommand{\BrochureMedium}{medium}\newcommand{\BrochureHard}{hard}\newcommand{\BrochureBonus}{bonus}}{}
-\IfLanguageName{french}{\newcommand{\BrochureEasy}{facile}\newcommand{\BrochureMedium}{moyen}\newcommand{\BrochureHard}{difficile}\newcommand{\BrochureBonus}{bonus}}{}
+\IfLanguageName{gujarati}{\newcommand{\BrochureEasy}{સરળ}\newcommand{\BrochureMedium}{મધ્યમ}\newcommand{\BrochureHard}{કઠિન}\newcommand{\BrochureBonus}{બોનસ}}{}
 \IfLanguageName{italian}{\newcommand{\BrochureEasy}{facile}\newcommand{\BrochureMedium}{medio}\newcommand{\BrochureHard}{difficile}\newcommand{\BrochureBonus}{bonus}}{}
 
 % initialize text commands
@@ -57,8 +58,9 @@
 \newcommand{\taskTitle}{}
 \newcommand{\taskGraphicsFolder}{}
 \newcommand{\taskBrochureFile}{}
+
 \IfLanguageName{english}{\newcommand{\BrochureAgeCategoryThreeToFour}{3/4}\newcommand{\BrochureAgeCategoryFiveToSix}{5/6}\newcommand{\BrochureAgeCategorySevenToEight}{7/8}\newcommand{\BrochureAgeCategoryNineToTen}{9/10}\newcommand{\BrochureAgeCategoryElevenToThirteen}{11/12}}{}
-\IfLanguageName{french}{\newcommand{\BrochureAgeCategoryThreeToFour}{5/6\textsuperscript{H}}\newcommand{\BrochureAgeCategoryFiveToSix}{7/8\textsuperscript{H}}\newcommand{\BrochureAgeCategorySevenToEight}{9/10\textsuperscript{H}}\newcommand{\BrochureAgeCategoryNineToTen}{11/12\textsuperscript{H}}\newcommand{\BrochureAgeCategoryElevenToThirteen}{13--15\textsuperscript{H}}}{}
+\IfLanguageName{gujarati}{\newcommand{\BrochureAgeCategoryThreeToFour}{૩/૪}\newcommand{\BrochureAgeCategoryFiveToSix}{૫/૬}\newcommand{\BrochureAgeCategorySevenToEight}{૭/૮}\newcommand{\BrochureAgeCategoryNineToTen}{૯/૧૦}\newcommand{\BrochureAgeCategoryElevenToThirteen}{૧૧/૧૨}}{}
 \IfLanguageName{italian}{\newcommand{\BrochureAgeCategoryThreeToFour}{3/4}\newcommand{\BrochureAgeCategoryFiveToSix}{5/6}\newcommand{\BrochureAgeCategorySevenToEight}{7/8}\newcommand{\BrochureAgeCategoryNineToTen}{9/10}\newcommand{\BrochureAgeCategoryElevenToThirteen}{11--13}}{}
 \newcounter{BrochureHeaderGenerationTemp}
 \newcommand{\taskDifficulties}{%
@@ -155,22 +157,27 @@
   }%
 
 \IfLanguageName{english}{\newcommand{\BrochureSolution}{Solution}}{}
-\IfLanguageName{french}{\newcommand{\BrochureSolution}{Solution}}{}
+\IfLanguageName{gujarati}{\newcommand{\BrochureSolution}{Solution}}{}
 \IfLanguageName{italian}{\newcommand{\BrochureSolution}{Soluzione}}{}
 
 \IfLanguageName{english}{\newcommand{\BrochureItsInformatics}{This is Computer Science!}}{}
-\IfLanguageName{french}{\newcommand{\BrochureItsInformatics}{C'est de l'informatique\thinspace{}!}}{}
+\IfLanguageName{gujarati}{\newcommand{\BrochureItsInformatics}{This is Computer Science!}}{}
 \IfLanguageName{italian}{\newcommand{\BrochureItsInformatics}{Questa è l'informatica!}}{}
 
+%\IfLanguageName{english}{\newcommand{\BrochureItsComputationalThinking}{This is Computational Thinking}}{}
+%\IfLanguageName{gujarati}{\newcommand{\BrochureItsComputationalThinking}{This is Computational Thinking}}{}
+
+
 \IfLanguageName{english}{\newcommand{\BrochureWebsitesAndKeywords}{Websites And Keywords}}{}
-\IfLanguageName{french}{\newcommand{\BrochureWebsitesAndKeywords}{Mots clés et sites web}}{}
+\IfLanguageName{gujarati}{\newcommand{\BrochureWebsitesAndKeywords}{Websites And Keywords}}{}
 \IfLanguageName{italian}{\newcommand{\BrochureWebsitesAndKeywords}{Parole chiave e siti web}}{}
 
 \IfLanguageName{english}{\newcommand{\BrochureCopyright}{\copyright{} \href{https://www.bebras.in/}{Bebras India} \BrochureYear, \href{http://bebras.cspathshala.org/}{CSpathshala}}}{}
-\IfLanguageName{french}{\newcommand{\BrochureCopyright}{\copyright{} \href{https://www.castor-informatique.ch/}{Castor Informatique} \BrochureYear, \href{http://www.svia-ssie-ssii.ch/}{SSIE}}}{}
+\IfLanguageName{gujarati}{\newcommand{\BrochureCopyright}{\copyright{} \href{https://www.bebras.in/}{Bebras India} \BrochureYear, \href{http://bebras.cspathshala.org/}{CSpathshala}}}{}
 \IfLanguageName{italian}{\newcommand{\BrochureCopyright}{\copyright{} \href{https://www.castoro-informatico.ch/}{Castoro Informatico} \BrochureYear, \href{http://www.svia-ssie-ssii.ch/}{SSII}}}{}
 
 \IfLanguageName{english}{\newcommand{\BrochureAuthors}{Authors}}{}
+\IfLanguageName{gujarati}{\newcommand{\BrochureAuthors}{Authors}}{}
 \IfLanguageName{french}{\newcommand{\BrochureAuthors}{Auteur·e·s des exercices}}{}
 \IfLanguageName{italian}{\newcommand{\BrochureAuthors}{Autori dei quesiti}}{}
 
