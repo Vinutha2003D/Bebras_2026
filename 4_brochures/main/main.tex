@@ -7,12 +7,14 @@
   
   % front matter
   \frontmatter
-  
+
   % definition of header & footer
   \newcommand{\Brochurelohead}{\leftmark}
   \newcommand{\Brochurerehead}{\leftmark}
   \newcommand{\Brochurecfoot}{}
+
   \pagestyle{scrheadings}
+  
   \rohead[{\includegraphicsnosvg[height=9mm]{graphics/Bebras India Logo_male.pdf}}]{\includegraphicsnosvg[height=9mm]{graphics/Bebras India Logo_male.pdf}}
   \lehead[{\includegraphicsnosvg[height=9mm]{graphics/Bebras India Logo_female.pdf}}]{\includegraphicsnosvg[height=9mm]{graphics/Bebras India Logo_female.pdf}}
   \lohead[\Brochurelohead]{\Brochurelohead}
@@ -40,13 +42,13 @@
    %\input{main/credits\BrochureLanguagePostfix.tex}
    %\input{main/preface\BrochureLanguagePostfix.tex}
 
-    % protrusion should be disabled for toc
+   % protrusion should be disabled for toc
     \microtypesetup{protrusion=false}
-    % line style
-   % \IfLanguageName{english}{\DeclareTOCStyleEntry[beforeskip=0pt,numwidth=2em,linefill=\TOCLineLeaderFill]{chapter}{chapter}}{}
-   % \DeclareTOCStyleEntry[beforeskip=0pt,numwidth=2em,linefill=\TOCLineLeaderFill,pagenumberformat=\GujaratiTOCPageNumber, pagenumberwidth=2.5em]{chapter}{chapter}
-    \DeclareTOCStyleEntry[beforeskip=0pt,numwidth=2em,linefill=\TOCLineLeaderFill]{chapter}{chapter}
-    % table of contents
+
+   % line style
+   \DeclareTOCStyleEntry[beforeskip=0pt,numwidth=2em,linefill=\TOCLineLeaderFill]{chapter}{chapter}
+   
+   % table of contents
     \tableofcontents
     \microtypesetup{protrusion=true}
   \endgroup
@@ -70,11 +72,12 @@
   
   % \IfLanguageName{english}{\input{tasks/onetask.tex}}{}
   \IfLanguageName{english}{\input{tasks/tasks.tex}}{}
-  \IfLanguageName{gujarati}{\input{tasks/Test_tasks.tex}}{}
-  %\input{tasks/Test_tasks.tex}
-  %\input{tasks/tasks.tex}
+  \IfLanguageName{gujarati}{\input{tasks/gu_tasks.tex}}{}
+  \IfLanguageName{marathi}{\input{tasks/onetask.tex}}{}
+  \IfLanguageName{hindi}{\input{tasks/onetask.tex}}{}
+  \IfLanguageName{odia}{\input{tasks/onetask.tex}}{}
+
   \BrochureSetHeadersForNonTasks{}
-  
   
   \appendix
   % the appendix has no cleardoublepage (aka no empty pages inserted)

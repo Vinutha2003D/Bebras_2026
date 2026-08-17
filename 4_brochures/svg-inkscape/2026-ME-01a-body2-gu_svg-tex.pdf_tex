@@ -1,0 +1,65 @@
+%% Creator: Inkscape 1.3 (0e150ed6c4, 2023-07-21), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file '2026-ME-01a-body2-gu_svg-tex.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{1897.90447998bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.41564289)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{2026-ME-01a-body2-gu_svg-tex.pdf}}%
+    \put(0.02662436,0.26364792){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}૫ દડાઓ ગબડવા લાગે તે પહેલાં\end{tabular}}}}%
+    \put(0.2716593,0.2633638){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}દડાઓ ગબડવાનું બંધ થયા પછી\end{tabular}}}}%
+    \put(0.49449521,0.26449858){\color[rgb]{0,0,0}\rotatebox{-0.00000303}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}પિન ખેંચ્યા પછી મળતું અંતિમ પરિણામ \end{tabular}}}}}%
+    \put(0.07425128,0.0019393){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}૫ દડાઓ ગબડવા લાગે તે પહેલાં\end{tabular}}}}%
+    \put(0.38160575,0.0035787){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}દડાઓ ગબડવાનું બંધ થયા પછી\end{tabular}}}}%
+    \put(0.71663787,0.00580235){\color[rgb]{0,0,0}\rotatebox{-0.00000303}{\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}fiબૂચ કાઢ્યા પછીનું અંતિમ પરિણામk\end{tabular}}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{2026-ME-01a-body2-gu_svg-tex.pdf}}%
+  \end{picture}%
+\endgroup%
