@@ -70,12 +70,17 @@
 
   \BrochureSetHeadersForTasks{}
   
-  % \IfLanguageName{english}{\input{tasks/onetask.tex}}{}
-  \IfLanguageName{english}{\input{tasks/tasks.tex}}{}
-  \IfLanguageName{gujarati}{\input{tasks/gu_tasks.tex}}{}
-  \IfLanguageName{marathi}{\input{tasks/onetask.tex}}{}
-  \IfLanguageName{hindi}{\input{tasks/onetask.tex}}{}
-  \IfLanguageName{odia}{\input{tasks/onetask.tex}}{}
+  \ifthenelse{\boolean{ssi}}{%
+      \renewcommand{\BrochureLanguagePostfix}{-SSI-eng}
+      \input{tasks/ssi_tasks.tex}
+  }
+  {
+    \IfLanguageName{english}{\input{tasks/tasks.tex}}{}
+    \IfLanguageName{gujarati}{\input{tasks/gu_tasks.tex}}{}
+    \IfLanguageName{marathi}{\input{tasks/tasks.tex}}{}
+    \IfLanguageName{hindi}{\input{tasks/hi_tasks.tex}}{}
+    \IfLanguageName{tamil}{\input{tasks/onetask.tex}}{}
+  }
 
   \BrochureSetHeadersForNonTasks{}
   

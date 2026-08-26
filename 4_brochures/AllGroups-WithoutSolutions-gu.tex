@@ -17,13 +17,10 @@
 \babelfont{sf}[Renderer=HarfBuzz]{Nirmala UI}
 \babelfont{tt}[Renderer=HarfBuzz]{Nirmala UI}
 
-\babelprovide[mapdigits]{gujarati}
+%\babelprovide[mapdigits]{gujarati}
 
 \input{main/header.tex}
 
-\addto\captionsgujarati{%
-    \renewcommand{\contentsname}{અનુક્રમણિકા}%
-}
 
 % set the age categories (either true or false)
 \newboolean{age3to4}\setboolean{age3to4}{true}
@@ -34,6 +31,9 @@
 
 % set whether with or without solutions
 \newboolean{solutions}\setboolean{solutions}{false}
+
+
+\newboolean{ssi}\setboolean{ssi}{false}
 
 
 % the document itself
