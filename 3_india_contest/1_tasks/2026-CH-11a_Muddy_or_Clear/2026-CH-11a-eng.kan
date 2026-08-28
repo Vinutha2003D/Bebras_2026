@@ -1,7 +1,7 @@
 ---
 id: 2026-CH-11a
-name: Muddy or Clear?
-title: Muddy or Clear?
+name: ಶುದ್ಧ ನೀರು ಅಥವಾ ಕೆಸರು ನೀರು?
+title: ಶುದ್ಧ ನೀರು ಅಥವಾ ಕೆಸರು ನೀರು?
 ages:
   6-8: --
   8-10: --
@@ -36,20 +36,22 @@ settings:
 
 ## Body
 
-The beavers play a game with clear and muddy water. First they build a grid like this using posts and removable walls:
+
 
 ![body1]
 
-After, they start playing, they always follow these rules:
-- Luca pours clear water into one randomly chosen field.
-- Mora pours muddy water in any other field.
-- Luca and Mora then take turns removing one wall at a time. Luca starts first. When a wall is removed, the player’s water flows into a neighboring field.  
-- A wall may not be removed if:
-  - it is an outer wall of the playing area;
-  - there is no water on both sides;
-  - it has muddy water on one side and clear water on the other side.
+ನಂತರ ಆಟ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ.
+ಅವರು ಯಾವಾಗಲೂ ಈ ನಿಯಮಗಳನ್ನು ಪಾಲಿಸುತ್ತಾರೆ:- 
+ಚಿಂಟು ಒಂದು ಚೌಕವನ್ನು ಯೋಚಿಸದೆ ಆಯ್ಕೆ ಮಾಡುತ್ತಾನೆ. ಆ ಚೌಕಕ್ಕೆ ಶುದ್ಧ ನೀರನ್ನು ಸುರಿಸುತ್ತಾನೆ.
+- ಪಿಂಟು ಬೇರೆ ಯಾವುದೇ ಚೌಕಕ್ಕೆ ಕೆಸರು ನೀರನ್ನು ಸುರಿಸುತ್ತಾನೆ.
+- ನಂತರ ಚಿಂಟು ಮತ್ತು ಪಿಂಟು ಒಂದೊಂದೇ ಗೋಡೆಯನ್ನು ತೆಗೆಯುತ್ತಾರೆ. 
+ಚಿಂಟು ಮೊದಲು ಆರಂಭಿಸುತ್ತಾನೆ. ಗೋಡೆಯನ್ನು ತೆಗೆಯುವಾಗ, ಅವನ ನೀರು ಪಕ್ಕದ ಚೌಕಕ್ಕೆ ಹರಿದು ಹೋಗುತ್ತದೆ.- 
+ಈ ಕೆಳಗಿನ ಸಂದರ್ಭಗಳಲ್ಲಿ ಗೋಡೆಯನ್ನು ತೆಗೆಯಲು ಸಾಧ್ಯವಿಲ್ಲ:
+1) ಅದು ಆಟದ ಪ್ರದೇಶದ ಬಾಹ್ಯ ಗೋಡೆಯಾಗಿದ್ದರೆ; 
+2) ಎರಡು ಬದಿಗಳಲ್ಲೂ ನೀರು ಇಲ್ಲದಿದ್ದರೆ;
+3) ಒಂದು ಬದಿಯಲ್ಲಿ ಕೆಸರು ನೀರು ಮತ್ತು ಇನ್ನೊಂದು ಬದಿಯಲ್ಲಿ ಶುದ್ಧ ನೀರು ಇದ್ದರೆ.
 
-The player who cannot remove the wall loses the game.
+ಗೋಡೆಯನ್ನು ತೆಗೆಯಲು ಸಾಧ್ಯವಾಗದ ಆಟಗಾರ ಆಟವನ್ನು ಕಳೆದುಕೊಳ್ಳುತ್ತಾನೆ.
 
 Here an example of first 3 turns:
 
